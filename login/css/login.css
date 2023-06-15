@@ -1,0 +1,204 @@
+body {
+  /* background: url(../image/login.png); */
+}
+main {
+}
+
+.sub_area {
+  display: flex;
+  width: 1260px;
+  height: 100px;
+  margin: 20px auto;
+  border-bottom: 1px solid #6f4ffd;
+}
+
+.sub_text {
+  width: 800px;
+  height: 98px;
+  line-height: 40px;
+  text-indent: 32px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.sub_text > h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.sub_img {
+  width: 458px;
+  height: 98px;
+}
+
+.sub_img img {
+  width: 218px;
+  height: 100%;
+  float: right;
+}
+
+.body_wrap {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/* 왼쪽 멤버십 어사이드 */
+
+.left_aside {
+  margin: 20px 0px 0px 90px;
+  width: 256px;
+  height: 245px;
+}
+
+.left_aside h2 {
+  padding: 10px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #000000;
+  background-color: rgb(57, 181, 239);
+  color: white;
+  text-align: center;
+  border-bottom: none;
+}
+
+.left_aside li {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+/* -------------main부분------------ */
+.cont_area {
+  width: 1005px;
+  height: 850px;
+  /* background-color: rgb(78, 211, 73);
+  opacity: 0.3; */
+  float: left;
+}
+/* -------------------cont_top------------ */
+.cont_top {
+  display: flex;
+  justify-content: space-between;
+  width: 952px;
+  height: 88px;
+  margin-left: 50px;
+  border-bottom: 1px solid #ebebeb;
+  line-height: 88px;
+  /* background: pink;
+  opacity: 0.2; */
+}
+.location {
+  /* width: 300px; */
+  height: 32px;
+  /* background-color: #2d78da; */
+}
+.location > img {
+  width: 20px;
+  height: 18px;
+}
+
+.location_wrap {
+  transform: translateY(-25px);
+}
+
+.sns_icon > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sns_icon > ul > li {
+  width: 100;
+  height: 30px;
+}
+
+.login_cont_mid {
+  width: 952px;
+  height: 143px;
+  margin-left: 50px;
+  border-bottom: 2px solid #2d78da;
+  /* background: yellow;
+  opacity: 0.2; */
+}
+.login_cont_bott {
+  width: 952px;
+  height: 335px;
+  margin-left: 50px;
+  border-bottom: 1px solid #ebebeb;
+  /* background-color: blanchedalmond;
+  opacity: 0.3; */
+}
+
+fieldset {
+  border: none;
+}
+
+.login_form {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  margin: 50px 0 0 120px;
+  /* background-color: aqua; */
+  /* opacity: 0.4; */
+}
+.login_form > p > img {
+  margin-right: 10px;
+}
+
+#id_input {
+  transform: translateX(16px);
+}
+
+.txt_field {
+  margin-right: 10px;
+}
+
+.txt_field p:first-of-type {
+  margin-bottom: 7px;
+}
+
+.txt_field input {
+  width: 280px;
+  height: 30px;
+}
+/* ------------로그인 버튼------ */
+.login_Btn a {
+  display: block;
+  background: #007dcd;
+  width: 86px;
+  height: 74px;
+  color: white;
+  font-weight: bold;
+  line-height: 74px;
+  text-align: center;
+}
+/* --------아직회원 아님?------------------------------- */
+.go_signUp {
+  width: 100%;
+  height: 157px;
+  text-align: start;
+  border-top: 1px solid #ebebeb;
+}
+.go_signUp ul {
+  margin: 30px 0px 20px 120px;
+}
+
+.go_signUp ul li {
+  margin-bottom: 15px;
+}
+
+.go_signUp > ul > li a {
+  border: 2px solid #ebebeb;
+  display: inline-block;
+  width: 205px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  font-size: 14px;
+}
+.id_pw {
+  transform: translateX(6px);
+}
+/* -----for jQuery-------- */
+.mute {
+  color: #a7a3a38f;
+}

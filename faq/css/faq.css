@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/* 라디오 탭 */
+main {
+  padding: 50px 0px;
+  margin: 0 auto;
+  width: 1440px;
+}
+
+main > section {
+  width: 953px;
+  margin-left: 400px;
+  transform: translateY(-150px);
+}
+.faq_wrapper {
+  margin: 0 auto;
+  width: 1260px;
+}
+.faq_left_aside {
+  margin: 20px 0px 0px 90px;
+  width: 256px;
+  height: 245px;
+}
+
+.faq_left_aside h2 {
+  padding: 10px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #000000;
+  background-color: rgb(57, 181, 239);
+  color: white;
+  text-align: center;
+  border-bottom: none;
+}
+
+.faq_left_aside li {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+.tab_con {
+  width: 953px;
+  height: 90px;
+  /* margin-left: 50px; */
+  margin-bottom: 30px;
+  border: solid 1px #ccc;
+}
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  height: 40px;
+  width: 24.5%;
+  background: #ccc;
+  text-align: center;
+  line-height: 40px;
+}
+.c01 li,
+.c02 li,
+.c03 li,
+.c04 li {
+  margin: 15px;
+}
+
+.c01 li a,
+.c02 li a,
+.c03 li a,
+.c04 li a {
+  margin: 0px 20px;
+}
+.c01,
+.c02,
+.c03,
+.c04 {
+  display: none;
+}
+/* 라디오버튼이 체크가 되면 동생들 중에서 해당 클래스를 선택한다. */
+#tabmenu01:checked ~ .c01 {
+  display: block;
+}
+#tabmenu02:checked ~ .c02 {
+  display: block;
+}
+#tabmenu03:checked ~ .c03 {
+  display: block;
+}
+#tabmenu04:checked ~ .c04 {
+  display: block;
+}
+/* 라디오버튼이 체크가 되면 바로 뒤에 있는 레이블 서식을 변경한다. */
+input[type="radio"]:checked + label {
+  background: #349bed;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* faq리스트 서식 */
+.all_list {
+  position: relative;
+}
+.all_list > p {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+.faq_box {
+  width: 953px;
+  margin: 20px auto;
+}
+
+.faq {
+  margin: 30px 0px 40px 0px;
+  /* padding-top:10px; */
+  border-top: solid 1px #333;
+  border-bottom: solid 1px #333;
+}
+.faq > dt::before {
+  content: "Q";
+  color: #fff;
+  background-color: #263c7c;
+  border-radius: 25px;
+  padding: 3px 7px;
+  font-size: 16px;
+  margin-right: 60px;
+}
+.faq > dd::before {
+  content: "A";
+  font-weight: bold;
+  position: relative;
+  color: #fff;
+  background-color: #767880;
+  padding: 3px 7px;
+  border-radius: 25px;
+}
+.faq > dt {
+  line-height: 60px;
+  border-bottom: solid 1px #ccc;
+  cursor: pointer;
+  position: relative;
+  font-size: 13px;
+}
+.faq dt span {
+  color: #4173bd;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.faq > dd {
+  background: #f4f4f2;
+  padding: 26px 15px 20px 20px;
+  text-indent: 20px;
+  display: none;
+}
+
+.paging {
+  display: flex;
+  justify-content: center;
+  margin-left: 250px;
+}
+.paging li {
+  border: solid 1px #505360;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  margin: 0px 5px;
+}
+/* cont_bott */
+.cont_bott {
+  width: 955px;
+  height: 162px;
+  border: solid 1px #ccc;
+  box-shadow: 0px 1px 2px #d9d9d9;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 400px;
+  margin-top: 300px;
+}
+.cont_bott_top {
+  width: 953px;
+  height: 73px;
+  display: flex;
+  margin-top: 20px;
+  color: #b1afaf;
+}
+.cont_bott_top img {
+  width: 55px;
+  height: 45px;
+  margin: 0px 47px;
+}
+.cont_bott_b0ttom {
+  width: 953px;
+  height: 52px;
+  margin: 0 auto;
+}
+.ic_all {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  margin-left: 160px;
+}
+.ic_all li div {
+  text-align: center;
+  margin: 0px 10px;
+}
+.ic_all li div img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}

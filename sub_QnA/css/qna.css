@@ -1,0 +1,248 @@
+﻿/* body{background: url(../images/qna.png) no-repeat center top;} */
+	
+#section{
+	/* background: #ff73ff;
+	opacity: .3; */
+	height: 1504px;
+	width: 100%;
+}
+
+
+.sub_area {
+	width: 1420px;
+	margin: 20px auto;
+  }
+
+
+  .qna_left_aside {
+	margin: 20px 0px 0px 20px;
+	width: 256px;
+	height: 245px;
+  }
+  
+  
+  .qna_left_aside h2 {
+	padding: 10px;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #000000;
+	background-color: rgb(57, 181, 239);
+	color: white;
+	text-align: center;
+	border-bottom: none;
+  }
+  
+  .qna_left_aside li {
+	border: 1px solid #000000;
+	padding: 10px;
+  }
+
+	/* 탭 */
+	.tab_con {
+		width: 953px;
+		height: 120px;
+		margin-left: 50px;
+		margin-bottom: 30px;
+		border: solid 1px #ccc;
+	}
+	input[type="radio"] {
+		display: none;
+	}
+	
+	label {
+		display: inline-block;
+		height: 40px;
+		width: 24.5%;
+		background: #ccc;
+		text-align: center;
+		line-height: 40px;
+	}
+	.c01 li, .c02 li, .c03 li, .c04 li {
+		margin: 15px ;
+	}
+
+	.c01 li a, .c02 li a, .c03 li a, .c04 li a{
+		margin:0px 20px;
+	}
+	.c01,.c02,.c03,.c04{display: none;}
+	/* 라디오버튼이 체크가 되면 동생들 중에서 해당 클래스를 선택한다. */
+	#tabmenu01:checked ~ .c01{display: block;}
+	#tabmenu02:checked ~ .c02{display: block;}
+	#tabmenu03:checked ~ .c03{display: block;}
+	#tabmenu04:checked ~ .c04{display: block;}
+	/* 라디오버튼이 체크가 되면 바로 뒤에 있는 레이블 서식을 변경한다. */
+	input[type="radio"]:checked + label {
+		background: #349bed;
+		color: #fff;
+		font-weight: bold;
+	}
+	
+
+	.all_list {
+		position: relative;
+		margin-left: 50px;
+	}
+	.all_list > p {
+		position: absolute;
+		right: 0px;
+		bottom: 10px;
+	}
+
+
+	
+
+.qna{
+  margin:30px 0px 40px 50px;
+  /* padding-top:10px; */
+  border-top:solid 1px #333;
+  border-bottom:solid 1px #333;
+	width: 953px;
+	
+
+}
+
+.qna > dt{
+  line-height: 50px;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+}
+
+
+.qna > dd{
+  padding:10px 0px;
+  text-indent: 10px;
+	font-size: 14px;
+	position: relative;
+}
+
+.qna_list{
+	background-color: #f9f9f9;
+	font-weight: 600;
+}
+.q_num{
+	float: left;
+	text-indent: 15px;
+	margin-right: 50px;
+}
+
+.q_title01{
+	margin-left:200px;
+}
+.sort{
+	position: absolute;
+	right:290px;
+	width: 150px;
+	text-align: center;
+
+}
+.sort01{
+	margin:0px 80px 0px 260px;
+}
+.writer{
+	position: absolute;
+	right: 210px;
+	width: 60px;
+	text-align: center;
+}
+.view{
+	position: absolute;
+	right: 135px;
+}
+.view01{
+	margin-left: 50px;
+}
+.write_day01{
+	float: right;
+	margin-right: 30px;
+}
+.write_day{
+	float: right;
+	margin-right: 10px;
+}
+		
+		/*글쓰기 버튼  */
+.write_btn{
+	float: right;
+	margin: 10px 10px 0px 0px;
+	background-color: #349bed;
+	border: none;
+	width: 70px;
+	height: 30px;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: 600;
+	
+}
+
+/* 페이지내이션 */
+.pagination{
+	display: flex;
+	justify-content: center;
+}
+.pagination li{
+	border: solid 1px #ccc;
+	margin: 0px 3px;
+}
+.pagination li a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+
+}
+
+.on{
+	background-color: #007dcd;
+	color: #fff;
+	font-weight: 700;
+
+}		
+		
+		
+/* cont_bott */
+.cont_bott{
+	width:955px;
+	height: 162px;
+	border: solid 1px #ccc;
+	box-shadow: 0px 1px 2px #d9d9d9;
+	border-radius: 5px;
+	font-size: 14px;
+	margin-left: 50px;
+	margin-top: 300px;
+}
+.cont_bott_top{
+	width:953px;
+	height: 73px;
+	display: flex;
+	margin-top: 20px;
+	color: #b1afaf;
+}
+.cont_bott_top img{
+	width: 55px;
+	height: 45px;
+	margin: 0px 47px;
+}
+.cont_bott_b0ttom{
+	width: 953px;
+	height: 52px;
+	margin: 0 auto;
+}
+.ic_all{
+	display: flex;
+	justify-content: space-around;
+	width: 400px;
+	margin-left: 160px;
+}
+.ic_all li div{
+	text-align: center;
+	margin: 0px 10px;
+}
+.ic_all li div img{
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
